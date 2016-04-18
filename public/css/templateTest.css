@@ -1,0 +1,23 @@
+body{
+	font-family: "proxima-nova-soft",sans-serif;
+}
+
+li:first-child {
+ font-style: italic;
+ font-size: 3rem;
+}
+li:last-child {
+ font-weight: bold;
+ font-size: 3rem;
+}
+
+.ng-valid{
+	color: green;
+}
+.ng-dirty{
+	color: navajowhite;
+}
+
+.ng-touched{
+	background-color: ghostwhite;
+}

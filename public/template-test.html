@@ -1,17 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
 	<title>test</title>
+	<!-- angular cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<!-- external js  -->
 	<script src="/js/templateTest.js"></script>
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="/css/templateTest.css">
+
 </head>
 <body>
-<h1>test</h1>
-<p>more testing</p>
 
-<ul>
-    <li ng-repeat="num in [1, 2, 3, 4, 5, 6, 7, 8, 9]" ng-if="num % 3 == 0">
-        {{ num }} is even!
-    </li>
-</ul>
+	<h1>test</h1>
+
+	<p>more testing</p>
+
+ 	<ul>
+    	<li ng-repeat="num in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]" ng-if="num % 3 == 0">
+        	{{ num }} is odd..
+    	</li>
+	</ul>
+
+  	<input ng-model="firstName" type="text" placeholder="Your firstName">	
+  	<br>
+  	<input ng-model="lastName" type="text" placeholder="Your lastName">	
+	<br>
+	<input ng-model="user.email" type="email" placeholder="Your email">	
+	<br>
+
+	<h1>firstName = {{ firstName }}</h1>
+	<h1>lastName =  {{ lastName }}</h1>
+	<h1>email =  {{ user.email }}</h1>
+
 </body>
 </html>
