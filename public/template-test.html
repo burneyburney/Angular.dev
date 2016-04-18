@@ -2,10 +2,16 @@
 <html>
 <head>
 	<title>test</title>
+	<script src="/js/templateTest.js"></script>
 </head>
 <body>
 <h1>test</h1>
 <p>more testing</p>
 
+<ul>
+    <li ng-repeat="num in [1, 2, 3, 4, 5, 6, 7, 8, 9]" ng-if="num % 3 == 0">
+        {{ num }} is even!
+    </li>
+</ul>
 </body>
 </html>
