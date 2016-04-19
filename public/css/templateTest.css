@@ -11,13 +11,15 @@ li:last-child {
  font-size: 3rem;
 }
 
-.ng-valid{
-	color: green;
-}
-.ng-dirty{
-	color: navajowhite;
-}
 
 .ng-touched{
-	background-color: ghostwhite;
+	color: tomato;
 }
+
+
+/*
+tomato
+
+modified or invalid = BRIGHT RED
+
+indeianred*/
